@@ -11,28 +11,28 @@ export default class extends Component {
             <div className={styles.root}>
                 <div className={styles.left}>
                     <div className={styles.basicItem}>
-                        <label>姓名</label>: 张建军
+                        <label>姓名</label> 张建军
                     </div>
                     <div className={styles.basicItem}>
-                        <label>性别</label>: 男
+                        <label>性别</label> 男
                     </div>
                     <div className={styles.basicItem}>
-                        <label>出生年月</label>: 1993/08/01
+                        <label>出生年月</label> 1993/08/01
                     </div>
                     <div className={styles.basicItem}>
-                        <label>民族</label>: 汉族
+                        <label>民族</label> 汉族
                     </div>
                     <div className={styles.basicItem}>
-                        <label>联系电话</label>: 17782369765
+                        <label>联系电话</label> 17782369765
                     </div>
                     <div className={styles.basicItem}>
-                        <label>毕业院校</label>: 重庆邮电大学
+                        <label>毕业院校</label> 重庆邮电大学
                     </div>
                     <div className={styles.basicItem}>
-                        <label>学历</label>: 本科
+                        <label>学历</label> 本科
                     </div>
                     <div className={styles.basicItem}>
-                        <label>专业</label>: 计算机
+                        <label>专业</label> 计算机
                     </div>
                 </div>
                 <div className={styles.right}>
