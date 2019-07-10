@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { HashRouter as Router } from 'react-router-dom'
 import MapRoutes from './routes/mapRoutes'
 import store from './redux'
+import './global.style.less'
 
 ReactDOM.render(
     <Provider store={store}>

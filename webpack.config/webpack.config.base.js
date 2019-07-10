@@ -37,14 +37,15 @@ module.exports = {
                 use: [{
                     loader: 'babel-loader',
                     options: {
-                        plugins: ['syntax-dynamic-import',
+                        plugins: [
                             [
                                 'import', {
-                                    libraryName: 'untd',
+                                    libraryName: 'antd',
                                     libraryDirectory: 'es',
                                     style: 'css',
                                 }
-                            ]
+                            ],
+                            'syntax-dynamic-import',
                         ],
                         presets: [
                             [
@@ -67,6 +68,7 @@ module.exports = {
                 }]
             }, {
                 test: /.(css|less)$/,
+                exclude: /node_modules/,
                 use: [{
                     loader: 'style-loader', // creates style nodes from JS strings
                 }, {
@@ -75,13 +77,27 @@ module.exports = {
                         modules: {
                             mode: 'local',
                             localIdentName: '__[local]_[hash:base64:5]',
-                            context: path.resolve(__dirname, 'src'),
-                            hashPrefix: 'my-custom-hash',
                         },
                     }
                 }, {
                     loader: 'less-loader', // compiles Less to CSS
                 },]
+            }, {
+                test: /\.(css|scss)$/,
+                include: /node_modules/,
+                use: ["style-loader", "css-loader", "less-loader"]
+            },
+            {
+                test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/,
+                use: ["file-loader"]
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: ["csv-loader"]
+            },
+            {
+                test: /\.xml$/,
+                use: ["xml-loader"]
             }
         ]
     },
