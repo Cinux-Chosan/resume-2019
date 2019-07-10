@@ -1,0 +1,42 @@
+.root{
+    height: 200px;
+    background: #5c9bd5;
+    color: #fff;
+    display: flex;
+    .left, .right {
+        flex-direction: column;
+    }
+    .left{
+        flex: 2;
+        // display: flex;
+        padding-top: 4em;
+        & > div {
+            margin-left: 80px;
+        }
+        .resumeMark {
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .intention{
+            line-height: 2;
+            font-size: 1.5em;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        line-height: 1.5em;
+        .infoItem{
+            margin: .4em 0;
+        }
+        :global{
+            .anticon{
+                font-size: 1.5em;
+                vertical-align: middle;
+                margin-right: .8em;
+            }
+        }
+    }
+}

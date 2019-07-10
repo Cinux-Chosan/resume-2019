@@ -1,0 +1,35 @@
+.root{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    
+    .titleLine{
+        @height: 20px;
+        height: @height;
+        display: flex;
+
+        .title{
+            text-align: center;
+            font-size: 1.5em;
+            line-height: @height;
+            font-weight: lighter;
+            padding: 0 1em;
+        }
+        &::before, &::after{
+            display: block;
+            content: "";
+            background: #5c9bd5;
+            height: 100%;
+        }
+        &::before{
+            flex: 1;
+        }
+        &::after{
+            flex: 4;
+        }
+    }
+
+    .boxMain{
+        padding: 1.5em 3em .5em;
+    }
+}
