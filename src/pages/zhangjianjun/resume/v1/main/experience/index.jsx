@@ -14,9 +14,13 @@ export default class extends Component {
                     <Timeline.Item color="green"> 加入猪八戒实习 2015-09-14 </Timeline.Item>
                     <Timeline.Item color="red" dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>毕业纪念日 2016-06-30</Timeline.Item>
                     <Timeline.Item >
-                        <div>
+                        {/* <div> */}
                             实习期结束，在猪八戒转正 2016-07-01
-                        </div>
+                            <div className={styles.workDetail}>
+                                参与项目：猪币商城（对外）项目、公司员工内部系统、公司销售系统、公司微信企业号
+                            </div>
+
+                        {/* </div> */}
                     </Timeline.Item>
                     <Timeline.Item color="red">从猪八戒辞职 2018-09</Timeline.Item>
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
