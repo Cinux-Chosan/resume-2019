@@ -26,6 +26,7 @@ module.exports = {
         alias: {
             "@components": path.join(rootDir, "./src/components/"),
             "@pages": path.join(rootDir, './src/pages'),
+            "@public": path.join(rootDir, './src/public'),
         }
     },
 

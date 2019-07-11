@@ -3,8 +3,19 @@
     background: #5c9bd5;
     color: #fff;
     display: flex;
+    position: relative;
+    text-shadow: 0 0 1px #fff;
+    .bg{
+        height: 100%;
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        opacity: 0.6;
+    }
     .left, .right {
         flex-direction: column;
+        position: relative;
     }
     .left{
         flex: 2;
@@ -16,10 +27,20 @@
         .resumeMark {
             font-size: 3.5em;
             font-weight: bold;
+            float: left;
+            background: rgba(0,0,0,.3);
+            padding: 0 20px;
+            border-radius: 10px;
         }
         .intention{
             line-height: 2;
             font-size: 1.5em;
+            clear: both;
+            background: rgba(0,0,0,.3);
+            padding: 0 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            float: left;
         }
     }
     .right{
@@ -28,8 +49,11 @@
         justify-content: center;
         padding-top: 1em;
         line-height: 1.5em;
+        display: none;
         .infoItem{
-            margin: .4em 0;
+            padding: .4em 20px;
+            border-radius: 10px 0 0 10px;
+            background: rgba(0,0,0,.3);
         }
         :global{
             .anticon{

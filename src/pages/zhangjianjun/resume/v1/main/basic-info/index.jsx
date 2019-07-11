@@ -11,7 +11,7 @@ export default class extends Component {
             <div className={styles.root}>
                 <div className={styles.left}>
                     <div className={styles.basicItem}>
-                        <label>姓名</label> 张建军
+                        <label>姓名</label> XXX
                     </div>
                     <div className={styles.basicItem}>
                         <label>性别</label> 男
