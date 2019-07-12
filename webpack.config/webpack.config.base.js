@@ -27,14 +27,15 @@ module.exports = {
             "@components": path.join(rootDir, "./src/components/"),
             "@pages": path.join(rootDir, './src/pages'),
             "@public": path.join(rootDir, './src/public'),
-        }
+        },
+        // modules: [path.resolve(rootDir, 'node_modules'), 'node_modules']
     },
 
     module: {
         rules: [
             {
                 test: /.(js|jsx)$/,
-                include: [path.resolve(rootDir, 'src')],
+                // include: [path.resolve(rootDir, 'src')],
                 use: [{
                     loader: 'babel-loader',
                     options: {
@@ -47,6 +48,7 @@ module.exports = {
                                 }
                             ],
                             'syntax-dynamic-import',
+                            "@babel/plugin-proposal-class-properties"
                         ],
                         presets: [
                             [
@@ -84,7 +86,7 @@ module.exports = {
                     loader: 'less-loader', // compiles Less to CSS
                 },]
             }, {
-                test: /\.(css|scss)$/,
+                test: /\.(css|less)$/,
                 include: /node_modules/,
                 use: ["style-loader", "css-loader", "less-loader"]
             },
