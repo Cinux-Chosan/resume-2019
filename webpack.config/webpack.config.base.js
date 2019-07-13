@@ -28,7 +28,7 @@ module.exports = {
             "@pages": path.join(rootDir, './src/pages'),
             "@public": path.join(rootDir, './src/public'),
         },
-        // modules: [path.resolve(rootDir, 'node_modules'), 'node_modules']
+        modules: [path.resolve(rootDir, 'node_modules'), 'node_modules']
     },
 
     module: {

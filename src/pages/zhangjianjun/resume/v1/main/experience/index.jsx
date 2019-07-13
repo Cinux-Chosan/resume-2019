@@ -3,10 +3,6 @@ import { Timeline, Icon } from 'antd';
 import styles from './style.less'
 
 export default class extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className={styles.root}>
@@ -40,9 +36,9 @@ export default class extends Component {
                                 <div className={styles.respTitle}>负责内容：</div>
                                 <ul className={styles.respDetail}>
                                     <li>1、作为部分项目前端负责人，参与项目的基础架构、搭建工作 </li>
-                                    <li>2、参与项目评审，评估前端开发周期 </li>
+                                    <li>2、参与项目评审，评估前端工作量和开发周期 </li>
                                     <li>3、编写高质量、可重用组件和业务代码 </li>
-                                    <li>4、配合后端人员联调，优化前端项目 </li>
+                                    <li>4、配合后端人员联调以及优化前端项目 </li>
                                     <li>5、探索新技术，在小组内部做技术分享 </li>
                                 </ul>
                             </div>

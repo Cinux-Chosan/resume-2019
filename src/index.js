@@ -14,5 +14,6 @@ ReactDOM.render(
             <NavLink to="/d">aaaaa</NavLink>
             <MapRoutes />
         </Router>
-    </Provider>,
+     </Provider>
+    ,
     document.getElementById('root'))
