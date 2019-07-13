@@ -11,8 +11,7 @@ import { NavLink } from 'react-router-dom'
 ReactDOM.render(
     <Provider store={store}>
         <Router>
-        <NavLink to="/1">aaaaa</NavLink>
-
+            <NavLink to="/d">aaaaa</NavLink>
             <MapRoutes />
         </Router>
     </Provider>,
