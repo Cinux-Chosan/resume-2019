@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import styles from './style.less'
+// import avatar from '@public/imgs/zjj.jpg'
+// import avatar from '@public/imgs/zjj2.png'
+// import avatar from '@public/imgs/zjj4.png'
+import avatar from '@public/imgs/zjj6.png'
 
 export default class extends Component {
     render() {
@@ -7,7 +11,7 @@ export default class extends Component {
             <div className={styles.root}>
                 <div className={styles.left}>
                     <div className={styles.basicItem}>
-                        <label>姓名</label> XXX
+                        <label>姓名</label> 张建军
                     </div>
                     <div className={styles.basicItem}>
                         <label>性别</label> 男
@@ -32,7 +36,7 @@ export default class extends Component {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=346047287,3883566532&fm=27&gp=0.jpg" />
+                    <img src={avatar} />
                 </div>
             </div>
         )

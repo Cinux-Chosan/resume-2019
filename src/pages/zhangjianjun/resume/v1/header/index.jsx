@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import { Icon } from 'antd'
 import styles from './style.less'
-import bg from '@public/bg.jpg'
-import bg2 from '@public/bg2.jpg'
+import bg from '@public/imgs/bg.jpg'
+import bg2 from '@public/imgs/bg2.jpg'
+import bg3 from '@public/imgs/bg3.jpg'
+import bg4 from '@public/imgs/bg4.jpg'
 
 export default class extends Component {
     render() {
         return (
             <div className={styles.root}>
-                <img src={bg2} className={styles.bg}/>
+                <img src={bg4} className={styles.bg}/>
                 <div className={styles.left}>
                     <div className={styles.resumeMark}>
                        个人简历

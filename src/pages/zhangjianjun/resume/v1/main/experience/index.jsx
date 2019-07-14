@@ -6,7 +6,7 @@ export default class extends Component {
     render() {
         return (
             <div className={styles.root}>
-                <Timeline pending="long long ago" mode="left" >
+                <Timeline pending=" " mode="left" >
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
                         重庆紫光华山智安科技有限公司 &lt;前端工程师> 2018-10 ~ 至今
                         <div className={styles.timelineDetail}>

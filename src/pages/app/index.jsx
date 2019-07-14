@@ -6,7 +6,6 @@ export default class extends Component {
         return (
             <>
                 {/* <CommonLayout> */}
-                    <NavLink to="/d">aaaaa</NavLink>
                     {this.props.yield}
                 {/* </CommonLayout> */}
             </>
