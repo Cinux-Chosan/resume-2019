@@ -23,16 +23,22 @@ export default class extends Component {
                         <label>民族</label> 汉族
                     </div>
                     <div className={styles.basicItem}>
-                        <label>联系电话</label> 17782369765
-                    </div>
-                    <div className={styles.basicItem}>
                         <label>毕业院校</label> 重庆邮电大学
                     </div>
                     <div className={styles.basicItem}>
                         <label>学历</label> 本科
                     </div>
                     <div className={styles.basicItem}>
-                        <label>专业</label> 计算机
+                        <label>专业</label> 计算机与智能科学
+                    </div>
+                    <div className={styles.basicItem}>
+                        <label>工作年限</label> 3 ~ 4 年
+                    </div>
+                    <div className={styles.basicItem}>
+                        <label>意向地点</label> 团队融洽，地点不限
+                    </div>
+                    <div className={styles.basicItem}>
+                        <label>联系电话</label> 17782369765（微信同号）
                     </div>
                 </div>
                 <div className={styles.right}>

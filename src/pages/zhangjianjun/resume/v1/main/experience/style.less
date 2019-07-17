@@ -1,22 +1,39 @@
 .root{
-    //
     .timelineDetail{
         border: 1px dashed rgba(0, 0, 0, 0.12);
         margin-top: .5em;
         padding: .5em 2em; 
     }
-    .workDetail{
+    .projSummary{
     }
-    .resposibility{
+    .projItem{
         margin: 0;
         display: flex;
-        .respTitle{
+        .projItemLabel{
             // float: left;
         }
-        .respDetail{
+        .projList{
             flex: 1;
             list-style: none;
             padding-left: 0;
+            .projItemDetail{
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
+                margin-bottom: .5em;
+                padding-bottom: .5em;
+                dt{
+                    margin-bottom: .2em;
+                }
+            }
+            .projLabel{
+                // font-size: 1.2em;
+            }
+            .subLabel{
+                // font-size
+            }
+            dd{
+                margin-left: 2em;
+                margin-bottom: 0;
+            }
         }
     }
 }

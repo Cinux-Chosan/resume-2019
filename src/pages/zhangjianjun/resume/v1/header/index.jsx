@@ -4,7 +4,7 @@ import styles from './style.less'
 import bg from '@public/imgs/bg.jpg'
 import bg2 from '@public/imgs/bg2.jpg'
 import bg3 from '@public/imgs/bg3.jpg'
-import bg4 from '@public/imgs/bg4.jpg'
+import bg4 from '@public/imgs/bg4-c.jpg'
 
 export default class extends Component {
     render() {
