@@ -6,7 +6,6 @@ import { HashRouter as Router } from 'react-router-dom'
 import MapRoutes from './routes/mapRoutes'
 import store from './redux'
 import './global.style.less'
-import { NavLink } from 'react-router-dom'
 
 ReactDOM.render(
     <Provider store={store}>

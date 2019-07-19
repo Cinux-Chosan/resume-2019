@@ -28,7 +28,22 @@ module.exports = {
             "@pages": path.join(rootDir, './src/pages'),
             "@public": path.join(rootDir, './src/public'),
         },
-        modules: [path.resolve(rootDir, 'node_modules'), 'node_modules']
+        plugins: [
+            {
+                apply(resolver) {
+                    const resolve = resolver.ensureHook('resolve')
+                    resolve.tapAsync('resolve-to-root-module', (requestObject, contextObject, cb) => {
+                        const { request, context: { issuer } } = requestObject
+                        if (issuer && ~issuer.indexOf('common.layout') && request.match(/react-router(-dom)?$/)) {
+                            console.log('-------\npath:',requestObject)
+                            requestObject.path = path.resolve(rootDir, 'node_modules')
+                        }
+                        resolver.doResolve('parsedResolve', requestObject, null, contextObject, cb);
+                    })
+                }
+            }
+        ]
+        // modules: [path.resolve(rootDir, 'node_modules'), 'node_modules']
     },
 
     module: {
